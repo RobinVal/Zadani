@@ -1,4 +1,4 @@
-
+import './commands';
 
   Cypress.Commands.add('visitOnDomain', (args, domain = Cypress.env('currentDomain')) => {
     const customVisitCommand = `visit${domain.charAt(0).toUpperCase()}${domain.slice(1)}`;
